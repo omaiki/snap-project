@@ -19,6 +19,5 @@ class User < ActiveRecord::Base
 
 end
 
-
 # password_hash is stored in database
 # password is what you are using from bcrypt
