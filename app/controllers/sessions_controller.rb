@@ -15,6 +15,7 @@ post '/sessions' do
   else
     @errors = ["Invalid input, please try again"]
     erb :'sessions/new'
+  end
 end
 
 
