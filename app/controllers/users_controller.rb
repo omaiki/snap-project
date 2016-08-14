@@ -1,12 +1,3 @@
-#USERS INDEX
-
-get '/users' do
-
-  @users = User.all #define instance variable for view
-
-  erb :'users/index' #show all users view (index)
-
-end
 
 # USERS NEW
 get '/users/new' do
@@ -15,8 +6,7 @@ end
 
 # USERS SHOW
 get '/users/:id' do
-
-  #gets params from url
+  if session[:id] == current
 
   @user = User.find(params[:id]) #define instance variable for view
 
