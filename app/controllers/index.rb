@@ -1,3 +1,3 @@
 get '/' do
-  erb:'sessions/new'
+  erb :'sessions/new'
 end

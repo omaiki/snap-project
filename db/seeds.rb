@@ -1,5 +1,7 @@
 require 'faker'
 
+User.create(username: 'bob', email: 'bob@bob.com', password: 'abc')
+
 5.times do
   User.create(
     username: Faker::Team.creature,
