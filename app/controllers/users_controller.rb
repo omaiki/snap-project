@@ -10,10 +10,9 @@ get '/users/login' do
   erb :'users/login'
 end
 
-
 get '/users/profile' do
   @user = current_user
-  # @round_objects = @user.rounds
+  @snapshot_objects = @user.snapshots
   erb :'users/show'
 end
 

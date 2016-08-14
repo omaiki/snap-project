@@ -1,0 +1,7 @@
+<h1> Snapshots </h1>
+
+  <p> click to zoom: </p>
+
+  <% @snapshots.each do |snap|
+    <a href="/snapshots/<%= snapshot.id %>"> <%= snapshot.video %></a> <br>
+    <% end %>

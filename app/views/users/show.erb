@@ -4,3 +4,15 @@
   <input type="hidden" name="_method" value="DELETE">
   <input type="submit" value="Logout!">
 </form>
+
+<h3><a href="/videos">Click a video to watch and start taking snapshots! </a></h3>
+
+<h2> User's snapshots </h2>
+
+<div>
+ Snapshots: <% @snapshot_objects.each do |snap| %>
+  <ul>
+    <li> <%= snap.title %> </li>
+  </ul>
+<% end %>
+</div>

@@ -1,5 +1,5 @@
 get '/sessions/new' do
-  erb :'sessions/new'
+  erb :'/sessions/new'
 end
 
 post '/sessions' do
@@ -9,7 +9,7 @@ post '/sessions' do
     redirect "users/profile"
   else
    @errors = ["Invalid information, please try again"]
-   erb :'users/new'
+   erb :'/users/new'
    end
 end
 

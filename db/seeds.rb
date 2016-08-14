@@ -12,6 +12,7 @@ end
 
 5.times do
   Video.create(
+    title: "Practice Video",
     url: Faker::Internet.url
     )
 end
